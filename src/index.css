@@ -1,6 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #f2f6fc;
+}
+
+.hero-grid {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(36, 127, 207, 0.22), transparent 48%),
+    radial-gradient(circle at 80% 20%, rgba(1, 75, 139, 0.2), transparent 50%),
+    linear-gradient(180deg, #f6f9ff 0%, #f2f6fc 100%);
 }
